@@ -1,5 +1,6 @@
-.venv
+.venv/
 poetry.lock
 __pycache__/
 .ipynb_checkpoints/
 models
+.vscode

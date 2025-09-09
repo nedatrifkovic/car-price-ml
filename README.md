@@ -17,30 +17,39 @@ Machine Learning project for predicting used car prices with XGBoost and serving
 ### 🚀 Quickstart
 
 #### Clone the repo
+```
 git clone https://github.com/your-username/car-price-ml.git
 cd car-price-ml
+```
 
 #### Install dependencies
 Install dependencies using Poetry:
+```
 poetry install
-
+```
 
 Activate the virtual environment:
+```
 poetry shell
+```
 
 #### Training the Models
 To train the machine learning models, run:
+```
 poetry run python -m src.train
-
+```
 
 #### Run the API
+```
 poetry run uvicorn api.app:app --reload
+```
 
 Visit: 👉 http://127.0.0.1:8000/docs
 
 ### 📡 Example Prediction
 
 Request:
+```json
 {
     "manufacturer": "Toyota",
     "model": "Corolla",
@@ -59,13 +68,14 @@ Request:
     "airbags": 6,
     "is_Turbo": "No",
 }
-
+```
 
 Response:
+``json
 {
   "predictions": [10500.45]
 }
-
+```
 
 ### 🧠 Model
 
