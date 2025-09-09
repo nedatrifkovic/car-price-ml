@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "car-price-ml"
+version = "0.1.0"
+description = "ML project for car price prediction."
+authors = ["Neda Stanojevic <necatrifkovic@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+numpy = "<2.3"
+pandas = "^2.3.2"
+scikit-learn = "^1.7.1"
+joblib = "^1.5.1"
+fastapi = "^0.116.1"
+uvicorn = "^0.35.0"
+xgboost = "^3.0.4"
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "<3.10"
+seaborn = "^0.13.2"
+jupyter = "^1.1.1"
+plotly = "^6.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
