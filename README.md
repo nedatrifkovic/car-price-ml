@@ -71,7 +71,7 @@ Request:
 ```
 
 Response:
-``json
+```json
 {
   "predictions": [10500.45]
 }
