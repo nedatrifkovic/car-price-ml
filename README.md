@@ -50,10 +50,11 @@ Visit: 👉 http://127.0.0.1:8000/docs
 
 Request:
 ```json
-{
+[
+  {
     "manufacturer": "Toyota",
     "model": "Corolla",
-    "prod_year": 2015,
+    "prod_year": 2017,
     "category": "Sedan",
     "leather_interior": "No",
     "fuel_type": "Petrol",
@@ -66,14 +67,17 @@ Request:
     "wheel": "Left wheel",
     "color": "White",
     "airbags": 6,
-    "is_Turbo": "No",
-}
+    "is_Turbo": "No"
+  }
+]
 ```
 
 Response:
 ```json
 {
-  "predictions": [10500.45]
+  "predictions": [
+    25608.908203125
+  ]
 }
 ```
 
