@@ -86,7 +86,7 @@ if __name__ == "__main__":
         "wheel": "Left wheel",
         "color": "White",
         "airbags": 6,
-        "is_Turbo": "No",
+        "is_Turbo": "No"
     }
 
     df_preds = bundle.predict_df(example)

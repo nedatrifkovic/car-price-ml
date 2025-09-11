@@ -1,8 +1,31 @@
 # 🚗 Car Price Prediction API
 
 Machine Learning project for predicting used car prices with XGBoost and serving predictions via a FastAPI REST API.
+Built with **Python, Scikit-learn, XGBoost, FastAPI, and Poetry**. 
 
 🔗 Interactive docs: http://127.0.0.1:8000/docs
+
+### 📂 Project Structure
+```
+car-price-ml/
+├── api/
+│   └── app.py
+├── data/
+│   ├── raw/
+│   └── processed/
+├── models/
+│   ├── car_price_model_XGBoost_Tuned.pkl
+│   └── feature_config.json
+├── notebooks/
+│   └── eda.ipynb
+├── src/
+│   ├── __init__.py
+│   ├── preprocessing.py
+│   ├── train.py
+│   └── predict.py
+├── pyproject.toml
+└── README.md
+```
 
 ### 📂 Project Overview
 
@@ -33,18 +56,34 @@ Activate the virtual environment:
 poetry shell
 ```
 
-#### Training the Models
+#### Training the Models (optional)
 To train the machine learning models, run:
 ```
 poetry run python -m src.train
 ```
 
-#### Run the API
+#### Run the API locally
 ```
 poetry run uvicorn api.app:app --reload
 ```
 
 Visit: 👉 http://127.0.0.1:8000/docs
+
+
+
+## 🐳 Run with Docker
+Build the image
+```
+docker build -t car-price-api .
+```
+
+Run the container
+```
+docker run -p 8000:8000 car-price-api
+```
+
+Visit: 👉 http://0.0.0.0:8000/docs
+
 
 ### 📡 Example Prediction
 
@@ -92,6 +131,7 @@ Stored in:
 models/car_price_model_XGBoost_Tuned.pkl
 
 models/feature_config.json
+
 
 ### 👩‍💻 Author
 

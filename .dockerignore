@@ -1,0 +1,27 @@
+# Python & tooling
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs & editors
+.venv
+venv
+.env
+.env.*
+.idea
+.vscode
+
+# Git
+.git
+.gitignore
+
+# Data, models, notebooks (mount them instead if large)
+data/
+notebooks/
+
+# OS/build artifacts
+*.log
+*.sqlite3
+*.db
+*.zip
