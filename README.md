@@ -1,11 +1,11 @@
-# 🚗 Car Price Prediction API
+# Car Price Prediction API
 
 Machine Learning project for predicting used car prices with XGBoost and serving predictions via a FastAPI REST API.
 Built with **Python, Scikit-learn, XGBoost, FastAPI, and Poetry**. 
 
-🔗 Interactive docs: http://127.0.0.1:8000/docs
+Interactive docs: http://127.0.0.1:8000/docs
 
-### 📂 Project Structure
+### Project Structure
 ```
 car-price-ml/
 ├── api/
@@ -27,17 +27,17 @@ car-price-ml/
 └── README.md
 ```
 
-### 📂 Project Overview
+### Project Overview
 
-📊 EDA & Feature Engineering → notebooks/eda.ipynb
+EDA & Feature Engineering → notebooks/eda.ipynb
 
-🤖 Trained Model → XGBoost with preprocessing pipeline
+Trained Model → XGBoost with preprocessing pipeline
 
-⚡ API → built with FastAPI
+API → built with FastAPI
 
-🛠 Deployment Ready → uvicorn api.app:app --reload
+Deployment Ready → uvicorn api.app:app --reload
 
-### 🚀 Quickstart
+### Quickstart
 
 #### Clone the repo
 ```
@@ -67,11 +67,11 @@ poetry run python -m src.train
 poetry run uvicorn api.app:app --reload
 ```
 
-Visit: 👉 http://127.0.0.1:8000/docs
+Visit: http://127.0.0.1:8000/docs
 
 
 
-## 🐳 Run with Docker
+## Run with Docker
 Build the image
 ```
 docker build -t car-price-api .
@@ -82,10 +82,10 @@ Run the container
 docker run -p 8000:8000 car-price-api
 ```
 
-Visit: 👉 http://0.0.0.0:8000/docs
+Visit: http://0.0.0.0:8000/docs
 
 
-### 📡 Example Prediction
+### Example Prediction
 
 Request:
 ```json
@@ -120,7 +120,7 @@ Response:
 }
 ```
 
-### 🧠 Model
+### Model
 
 Tested models: DecisionTree, RandomForest, XGBoost
 
@@ -131,8 +131,3 @@ Stored in:
 models/car_price_model_XGBoost_Tuned.pkl
 
 models/feature_config.json
-
-
-### 👩‍💻 Author
-
-✨ Developed by Neda Stanojević
